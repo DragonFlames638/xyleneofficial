@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>My Drive - Google Drive</title>
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/Noderz/schoolister/master/download%20(3).ico"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- header font -->
+    <link
+      href="//fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- body font -->
+    <link
+      href="//fonts.googleapis.com/css?family=Droid+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <style type="text/css">
+      /* fonts */
+      body {
+        font-family: "Droid Sans", arial, serif;
+        letter-spacing: 1px;
+      }
+      h1 {
+        font-family: "Orbitron", arial, serif;
+        letter-spacing: 2px;
+      }
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        letter-spacing: 2px;
+        font-weight: normal;
+      }
+
+      /* colors */
+      body {
+        background-color: #171A1E;
+        color: white;
+      }
+      .container {
+        background-color: #3F4038;
+        border-color: #171A1E;
+      }
+      a {
+        color: #62BECB;
+      }
+      a:hover {
+        color: #82DEEB;
+      }
+
+      #error {
+        border: 0px dotted white;
+        background: brown;
+      }
+
+      /* stripes and borders */
+      <canvas
+        id="c"
+        style="border:0x solid #d3d3d3;"
+        > Your
+        browser
+        does
+        not
+        support
+        the
+        HTML5
+        canvas
+        tag.</canvas
+        > \
+        .footer {
+        min-height: 60px;
+        background-repeat: repeat-x;
+        background-position: bottom left;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAA8CAIAAAAfXYiZAAAB+ElEQVR4nO3b11aDQBSF4T2IXWM3lhfxTt//PWKvsTfwIllLEobQZuZsYM4DyFkffyKBRJ2encBPsQmlF9BNHEtvoBul+LBiAEp6idQogK0sRdlUrMYnjwhLUTYVJzZiwQoom4rUxMmjwAoom4pSG8ljzTEmhV/duQucrzExDZKCbFkhpdRP9vuBWFmNk4JUWfOUUt95/2MEymqoFNyXtUAp9VXsusVpWY2WgsuyFimlPstcCzsqqwVScIPVDik4eBkuUUp9VPokaresNknBalnLlFLvNe5u2CqrfVKwVNYKpdRb7Ttm5stqqxSMl7VKKfVq6C6sybLaLQWDZa1RSr0YvbNvpqwuSMFIWeuUUs8WnhbVLas7UqhZVo9SamjtCWR1rF5kcA1jM7T5Ybfi3+6gFKqVtUEp9WT/1lzpI3RWCmXL2qSUenT11KXEcTouheJlbVFKPbh9RlzoaF5qNPllbVNK3Ut8oyXnmF4qObPK2qGUupP7/l3mkb1UevRl7VJK3Qp/p1NXlpfKmumy9iilbgikMFWWl5o9/4t4qdwZvwz3KaWumaQwKstLFZywTyl1xScF8Z+jaIdTqh8hZPsx1iWl1EEEsJXFLAUwlXVBKXWYeE9nWZBfCiRlnVNKHaWuE+TXbIoUxMsaUEodZ1x7Si7bLCkAf1M7eHbSdYGuAAAAAElFTkSuQmCC);
+      }
+      .container {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        overflow: hidden; /* otherwise the background image appears on top of the curved border */
+      }
+
+      /* layout */
+      body {
+        text-align: center;
+      }
+      .container {
+        width: 760px;
+        margin: 40px auto;
+        text-align: left;
+        max-width: calc(100% - 10px);
+      }
+
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 0;
+      }
+      ul {
+        line-height: 150%;
+      }
+      ul,
+      p {
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+      .main,
+      .footer {
+        padding: 1px 10px 0 10px;
+      }
+
+      #error {
+        display: none;
+        padding: 5px 10px;
+        margin: 30px 10px;
+      }
+
+      form ul {
+        list-style-type: none;
+        padding-left: 25px;
+      }
+      input[type="text"] {
+        width: 640px;
+        max-width: calc(100% - 8em);
+      }
+
+      .footer {
+        position: relative;
+        clear: both;
+      }
+      .footer p {
+        margin: 0;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding-left: 10px;
+      }
+
+      #google-ad {
+        text-align: center;
+        margin: 10px auto;
+      }
+      @media (min-width: 768px) {
+        #google-ad {
+          margin: 0;
+          float: right;
+          margin: 4px 2px 2px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h1>Xylene</h1>
+        <h3>If you need to contact me, my discord is: 𝓓𝓻𝓪𝓰𝓸𝓷.#0888</h3>
+        <h3>Im back, time to get back to work</h3>
+
+        <div id="error"></div>
+
+        <form action="no-js" method="get" id="unblocker-form">
+          <p>
+            URL:
+            <input type="text" id="url" name="url" autofocus="autofocus" />
+            <span class="_t38eb _ov9ai"
+              ><button class="_qv64e _gexxb _4tgw8 _njrw0">Go</button></span
+            >
+          </p>
+        </form>
+
+        <div id="google-ad">
+          <script
+            async
+            src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
+          <!-- Nodeunblocker.com -->
+          <ins
+            class="adsbygoogle"
+            style="display:inline-block;width:336px;height:280px"
+            data-ad-client="ca-pub-9477050254721722"
+            data-ad-slot="3464697570"
+          ></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+
+        <h3>Extra Links ↓ (If you get a 503 error, just refresh)</h3>
+        <p>
+          <a href="http://classpet.cf/" target="_blank">Agar.io</a>
+        </p>
+        <p>
+          <a href="http://classpet.ga/" target="_blank"
+            >ShellShockers (Public)</a
+          >
+        </p>
+        <p>
+          <a href="http://beautifulpuppy.ga/" target="_blank"
+            >ShellShockers (down for matinence)</a
+          >
+        </p>
+        <p></p>
+        <p><a href="http://fireflames.cf/" target="_blank">Discord</a></p>
+        <p></p>
+        <p><a href="http://jimms.ga/" target="_blank">CoolMath</a></p>
+        <p><a href="http://playful-sauce.cf" target="_blank">Crazy Games</a></p>
+        <p><a href="http://tcma.ga/" target="_blank">TikTok</a></p>
+        <p><a href="http://d303.ml/" target="_blank">Twitch (Alternative</a></p>
+        <p>
+          <a href="http://vbxxubw.cf/" target="_blank">Youtube (Alternative)</a>
+        </p>
+        <p></p>
+        <h3>About</h3>
+        <p>
+          It's designed to be extremely fast and compatible: It processes the
+          data on-the-fly rather than buffering the entire response, and it only
+          modifies URLs when necessary - relative ones will "just work".
+        </p>
+        <p>ㅤ</p>
+        <html>
+          <head>
+            <meta charset="utf-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+
+            <style>
+              .lightwidget,
+              .lightwidget * {
+                border: 0;
+                box-sizing: border-box;
+                font: inherit;
+                font-size: 100%;
+                line-height: 1.5;
+                margin: 0;
+                padding: 0;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                text-size-adjust: 100%;
+                vertical-align: baseline;
+              }
+              .lightwidget__tile {
+                list-style: none;
+              }
+              .lightwidget__tile--hidden {
+                display: none;
+              }
+              .lightwidget__image-wrapper {
+                font-size: 0;
+                line-height: 0;
+              }
+              .lightwidget__image-wrapper--video {
+                position: relative;
+              }
+              .lightwidget__image-wrapper--video:before {
+                background: url("data:image/svg+xml;base64,PHN2ZyBkaXNwbGF5PSJibG9jayIgdmlld0JveD0iMCAwIDQwMCA0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzNiA4OGMtMTQgMy0yMyAxMi0yNyAyNmwxIDE1OWMzIDI0IDMxIDM1IDUxIDIxbDItMSAxLTFhMTU5IDE1OSAwIDAgMSAxOC0xMGw1LTMgNC0zIDUtMiA4LTUgNi0zYTI5OCAyOTggMCAwIDAgMjYtMTVsNS0zIDEtMSA0LTJhODcgODcgMCAwIDEgOS02bDYtMyA0LTIgNC0yIDUtMyA2LTN2LTFhODQgODQgMCAwIDAgMTEtNyAzNSAzNSAwIDAgMCA5LTE0YzItMiAyLTExIDEtMTYtMi0xMi04LTE4LTI0LTI3YTE2MyAxNjMgMCAwIDEtMTQtOCAyMDMgMjAzIDAgMCAxLTIyLTEyIDkyMiA5MjIgMCAwIDAtNTItMzAgMzk0IDM5NCAwIDAgMS0yMy0xM2MtMTEtOC0yMS0xMS0zMC0xMCIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==")
+                  no-repeat 50% 50%;
+                background-size: 40% auto;
+                content: "";
+                display: block;
+                height: 100%;
+                left: 0;
+                opacity: 0.9;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+              }
+              .lightwidget__caption,
+              .lightwidget__photo {
+                display: block;
+              }
+              .lightwidget__caption,
+              .lightwidget__reactions {
+                color: #333;
+                font-family: -apple-system, system-ui, BlinkMacSystemFont, Arial,
+                  Helvetica, Verdana, sans-serif;
+                font-size: 1rem;
+                line-height: 1.5;
+                overflow: hidden;
+                padding: 1px;
+              }
+              .lightwidget__link {
+                display: block;
+                text-decoration: none;
+              }
+              .lightwidget__image {
+                border: 0;
+                height: auto;
+                max-width: 100%;
+                width: 100%;
+              }
+              .lightwidget--hide-tiles > .lightwidget__tile,
+              .lightwidget__reactions {
+                display: none;
+              }
+              body,
+
+                line-height: 1;
+              }
+              .lightwidget--slideshow .lightwidget__caption {
+                display: none;
+              }
+              .vjslider {
+                width: 100%;
+                overflow: hidden;
+              }
+              .vjslider__slider {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                transition: none;
+              }
+              .vjslider__slider--animate {
+                transition: transform 0.3s;
+              }
+              .vjslider__slide {
+                width: 100%;
+              }
+              .lightwidget--hover-caption-slide-up .lightwidget__photo {
+                overflow: hidden;
+                position: relative;
+              }
+              .lightwidget--hover-caption-slide-up .lightwidget__caption {
+                background-color: #3d3f52;
+                bottom: 0;
+                color: #fff;
+                display: block;
+                overflow: hidden;
+                padding: 2px 5px;
+                position: absolute;
+                text-overflow: ellipsis;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+                transition: -webkit-transform 0.4s;
+                transition: transform 0.4s;
+                transition: transform 0.4s, -webkit-transform 0.4s;
+                white-space: nowrap;
+                width: 100%;
+              }
+              .lightwidget--hover-caption-slide-up
+                .lightwidget__link--hover
+                .lightwidget__caption {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+              }
+              .lightwidget--image-format-square .lightwidget__image-wrapper {
+                position: relative;
+                width: 100%;
+              }
+              .lightwidget--image-format-square
+                .lightwidget__image-wrapper:after {
+                content: "";
+                display: block;
+                height: 0;
+                padding-bottom: 100%;
+              }
+              .lightwidget--image-format-square .lightwidget__image {
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                position: absolute;
+                width: 100%;
+              }
+              .lightwidget--object-fit-fallback
+                .lightwidget__object-fit-wrapper {
+                height: 100%;
+                position: absolute;
+                width: 100%;
+              }
+              .lightwidget--object-fit-fallback
+                .lightwidget__object-fit-wrapper:before {
+                background-image: inherit;
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                content: "";
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+              }
+              .lightwidget--object-fit-fallback .lightwidget__image {
+                opacity: 0;
+              }
+            </style>
+          </head>
+          <body>
+            <div class="vjslider">
+              <ul
+                class="lightwidget lightwidget--slideshow lightwidget--hover-caption-slide-up lightwidget--image-format-square vjslider__slider vjslider__slider--animate"
+                data-id="efc1eab43294583388a84d0220e2b21f"
+                data-mode="iframe"
+                style="width: 400%; transform: translate3d(-58.3333%, 0px, 0px);"
+              >
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li
+                  class="lightwidget__tile vjslider__slide vjslider__clone"
+                  style="flex-basis: 11.1111%;"
+                >
+                  <a
+                    class="lightwidget__link"
+                    href="https://www.instagram.com/p/B9YEo2dh0dj/"
+                    target="_blank"
+                  >
+                    <figure class="lightwidget__photo">
+                      <div
+                        class="lightwidget__image-wrapper lightwidget__image-wrapper--image"
+                      >
+                        <img
+                          class="lightwidget__image"
+                          srcset="
+                            https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389 1080w
+                          "
+                          src="https://scontent.xx.fbcdn.net/v/t51.2885-15/89069879_451026875590475_2552832455106626136_n.jpg?_nc_cat=110&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YLvz3G8PnAIAX-_MGAk&amp;_nc_ht=scontent.xx&amp;oh=855f56764dd43c7a2076874d06e681f8&amp;oe=5E814389"
+                          sizes="50vw"
+                          alt="classpet.ga update: fixed 502 error, plus added html encryption to prevent this method from being patched"
+                        />
+                      </div>
+                      <div class="lightwidget__reactions">
+                        <span class="lightwidget__likes">0</span>
+                        <span class="lightwidget__comments">0</span>
+                      </div>
+                      <figcaption class="lightwidget__caption">
+                        classpet.ga update: fixed 502 error, plus added html
+                        encryption to prevent this method from being patched
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+              </ul>
+              <style></style><style></style>
+            </div>
+            <script>
+              !(function(e) {
+                var t = {};
+                function i(n) {
+                  if (t[n]) return t[n].exports;
+                  var s = (t[n] = { i: n, l: !1, exports: {} });
+                  return (
+                    e[n].call(s.exports, s, s.exports, i), (s.l = !0), s.exports
+                  );
+                }
+                (i.m = e),
+                  (i.c = t),
+                  (i.d = function(e, t, n) {
+                    i.o(e, t) ||
+                      Object.defineProperty(e, t, { enumerable: !0, get: n });
+                  }),
+                  (i.r = function(e) {
+                    "undefined" != typeof Symbol &&
+                      Symbol.toStringTag &&
+                      Object.defineProperty(e, Symbol.toStringTag, {
+                        value: "Module"
+                      }),
+                      Object.defineProperty(e, "__esModule", { value: !0 });
+                  }),
+                  (i.t = function(e, t) {
+                    if ((1 & t && (e = i(e)), 8 & t)) return e;
+                    if (4 & t && "object" == typeof e && e && e.__esModule)
+                      return e;
+                    var n = Object.create(null);
+                    if (
+                      (i.r(n),
+                      Object.defineProperty(n, "default", {
+                        enumerable: !0,
+                        value: e
+                      }),
+                      2 & t && "string" != typeof e)
+                    )
+                      for (var s in e)
+                        i.d(
+                          n,
+                          s,
+                          function(t) {
+                            return e[t];
+                          }.bind(null, s)
+                        );
+                    return n;
+                  }),
+                  (i.n = function(e) {
+                    var t =
+                      e && e.__esModule
+                        ? function() {
+                            return e.default;
+                          }
+                        : function() {
+                            return e;
+                          };
+                    return i.d(t, "a", t), t;
+                  }),
+                  (i.o = function(e, t) {
+                    return Object.prototype.hasOwnProperty.call(e, t);
+                  }),
+                  (i.p = ""),
+                  i((i.s = 0));
+              })([
+                function(e, t, i) {
+                  var n = new (i(1))({
+                    username: "lizardwarrior912",
+                    breakpoints: [
+                      {
+                        base: true,
+                        breakpointType: "max",
+                        breakpointWidth: 4000,
+                        type: "slideshow",
+                        columns: 3,
+                        rows: 3,
+                        numberOfPhotos: 9,
+                        hoverEffect: "caption_slide_up",
+                        captions: { show: false, length: 0, fontSize: 0.8 },
+                        padding: 1,
+                        imageFormat: "square"
+                      }
+                    ],
+                    usePreloader: false,
+                    widgetId: "6557a910b0565e058d8230a220645560",
+                    mode: "iframe",
+                    clickEvent: "post"
+                  });
+                  n.registerModule(i(3)),
+                    n.registerModule(i(5)),
+                    n.registerModule(i(6)),
+                    n.registerModule(i(11)),
+                    n.registerModule(i(12)),
+                    n.registerModule(i(14)),
+                    n.registerModule(i(16)),
+                    n.registerModule(i(17)),
+                    n.init(document.querySelector(".lightwidget"));
+                },
+                function(e, t, i) {
+                  function n(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  i(2);
+                  var s = (function() {
+                    function e(t) {
+                      !(function(e, t) {
+                        if (!(e instanceof t))
+                          throw new TypeError(
+                            "Cannot call a class as a function"
+                          );
+                      })(this, e),
+                        (this.options = t),
+                        (this.modules = []),
+                        (this.dynamicModules = []),
+                        (this.breakpoints = []),
+                        (this.activeBreakpoint = null);
+                    }
+                    var t, i, s;
+                    return (
+                      (t = e),
+                      (i = [
+                        {
+                          key: "registerModule",
+                          value: function(e) {
+                            this.modules.push(e);
+                          }
+                        },
+                        {
+                          key: "registerDynamicModule",
+                          value: function(e) {
+                            this.dynamicModules.push(e);
+                          }
+                        },
+                        {
+                          key: "init",
+                          value: function(e) {
+                            if (!(e instanceof Element))
+                              throw new TypeError(
+                                "Value passed as domElement is not DOM element"
+                              );
+                            this.el = e;
+                            var t = this.options.breakpoints
+                              .filter(function(e) {
+                                return !0 === e.base;
+                              })
+                              .pop();
+                            this._initBaseModules(t),
+                              this._initDynamicModules();
+                          }
+                        },
+                        {
+                          key: "getWidgetId",
+                          value: function() {
+                            return this.options.widgetId;
+                          }
+                        },
+                        {
+                          key: "_initBaseModules",
+                          value: function(e) {
+                            var t = this;
+                            (this.modules = this.modules.map(function(e) {
+                              return new e(t.el);
+                            })),
+                              this.modules.forEach(function(t) {
+                                return t.run(e);
+                              });
+                          }
+                        },
+                        {
+                          key: "_initDynamicModules",
+                          value: function() {
+                            var e = this;
+                            (this.dynamicModules = this.dynamicModules.map(
+                              function(t) {
+                                return new t(e.el);
+                              }
+                            )),
+                              this.options.breakpoints.forEach(function(t) {
+                                var i = window.matchMedia(
+                                  "(max-width:".concat(t.breakpointWidth, "px)")
+                                );
+                                i.addListener(e._matchMediaListener.bind(e)),
+                                  e.breakpoints.push(i);
+                              }),
+                              this._matchMediaListener();
+                          }
+                        },
+                        {
+                          key: "_matchMediaListener",
+                          value: function() {
+                            var e,
+                              t = this,
+                              i = this.breakpoints
+                                .filter(function(e) {
+                                  return e.matches;
+                                })
+                                .pop();
+                            if (void 0 === i)
+                              e = this.options.breakpoints
+                                .filter(function(e) {
+                                  return !0 === e.base;
+                                })
+                                .pop();
+                            else {
+                              var n = parseInt(i.media.replace(/[^0-9]/g, ""));
+                              e = this.options.breakpoints
+                                .filter(function(e) {
+                                  return e.breakpointWidth === n;
+                                })
+                                .pop();
+                            }
+                            if (this.activeBreakpoint === e) return !1;
+                            (this.activeBreakpoint = e),
+                              this.dynamicModules.forEach(function(e) {
+                                e.disable();
+                              }),
+                              this.dynamicModules.forEach(function(e) {
+                                e.enable(t.activeBreakpoint);
+                              });
+                          }
+                        }
+                      ]) && n(t.prototype, i),
+                      s && n(t, s),
+                      e
+                    );
+                  })();
+                  e.exports = s;
+                },
+                function(e, t, i) {},
+                function(e, t, i) {
+                  function n(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  i(4);
+                  var s = (function() {
+                    function e(t) {
+                      !(function(e, t) {
+                        if (!(e instanceof t))
+                          throw new TypeError(
+                            "Cannot call a class as a function"
+                          );
+                      })(this, e),
+                        (this.el = t),
+                        (this.widgetId = this.el.getAttribute("data-id")),
+                        (this.el.dataset.mode = "iframe");
+                    }
+                    var t, i, s;
+                    return (
+                      (t = e),
+                      (i = [
+                        {
+                          key: "_sendPostMessage",
+                          value: function() {
+                            var e = {
+                              type: "lightwidget_widget_size",
+                              widgetId: this.widgetId,
+                              size: this.el.offsetHeight
+                            };
+                            window.parent.postMessage(JSON.stringify(e), "*");
+                          }
+                        },
+                        {
+                          key: "run",
+                          value: function() {
+                            var e = this;
+                            window.addEventListener(
+                              "resize",
+                              function() {
+                                return e._sendPostMessage();
+                              },
+                              !1
+                            ),
+                              "https" === window.location.protocol &&
+                                window.addEventListener(
+                                  "deviceorientation",
+                                  function() {
+                                    return e._sendPostMessage();
+                                  },
+                                  !1
+                                ),
+                              setInterval(function() {
+                                return e._sendPostMessage();
+                              }, 500);
+                          }
+                        }
+                      ]) && n(t.prototype, i),
+                      s && n(t, s),
+                      e
+                    );
+                  })();
+                  e.exports = s;
+                },
+                function(e, t, i) {},
+                function(e, t) {
+                  function i(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  var n = (function() {
+                    function e(t) {
+                      !(function(e, t) {
+                        if (!(e instanceof t))
+                          throw new TypeError(
+                            "Cannot call a class as a function"
+                          );
+                      })(this, e),
+                        (this.el = t),
+                        (this.widgetId = this.el.getAttribute("data-id"));
+                    }
+                    var t, n, s;
+                    return (
+                      (t = e),
+                      (n = [
+                        {
+                          key: "_sendRequest",
+                          value: function(e) {
+                            var t = new XMLHttpRequest(),
+                              i = {
+                                a: new Date().getTime(),
+                                b: this.widgetId,
+                                c: e
+                                  .getAttribute("href")
+                                  .replace("www.", "")
+                                  .replace("//R/instagram.com/", ""),
+                                d: "c"
+                              },
+                              n = Object.keys(i)
+                                .map(function(e) {
+                                  return ""
+                                    .concat(encodeURIComponent(e), "=")
+                                    .concat(encodeURIComponent(i[e]));
+                                })
+                                .join("&");
+                            t.open(
+                              "GET",
+                              "//lightwidget.com/widgets/_.gif?".concat(n),
+                              !0
+                            ),
+                              t.send(null);
+                          }
+                        },
+                        {
+                          key: "run",
+                          value: function() {
+                            var e = this;
+                            !0 !==
+                              this.el.classList.contains(
+                                "lightwidget--click-event-none"
+                              ) &&
+                              this.el.addEventListener("click", function(t) {
+                                for (
+                                  var i = t.target;
+                                  i !== document;
+                                  i = i.parentNode
+                                )
+                                  if (
+                                    i.classList.contains("lightwidget__link")
+                                  ) {
+                                    e._sendRequest(i);
+                                    break;
+                                  }
+                              });
+                          }
+                        }
+                      ]) && i(t.prototype, n),
+                      s && i(t, s),
+                      e
+                    );
+                  })();
+                  e.exports = n;
+                },
+                function(e, t, i) {
+                  function n(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  i(7);
+                  var s = i(8),
+                    r = (function() {
+                      function e(t) {
+                        !(function(e, t) {
+                          if (!(e instanceof t))
+                            throw new TypeError(
+                              "Cannot call a class as a function"
+                            );
+                        })(this, e),
+                          (this.el = t),
+                          (this.slider = null),
+                          (this.interval = null);
+                      }
+                      var t, i, r;
+                      return (
+                        (t = e),
+                        (i = [
+                          {
+                            key: "run",
+                            value: function(e) {
+                              this.slider = new s(this.el, {
+                                numberOfVisibleSlides: e.columns
+                              });
+                              var t = this;
+                              this.interval = setInterval(function() {
+                                t.slider.next();
+                              }, 4e3);
+                            }
+                          }
+                        ]) && n(t.prototype, i),
+                        r && n(t, r),
+                        e
+                      );
+                    })();
+                  e.exports = r;
+                },
+                function(e, t, i) {},
+                function(e, t, i) {
+                  function n() {
+                    return (n =
+                      Object.assign ||
+                      function(e) {
+                        for (var t = 1; t < arguments.length; t++) {
+                          var i = arguments[t];
+                          for (var n in i)
+                            Object.prototype.hasOwnProperty.call(i, n) &&
+                              (e[n] = i[n]);
+                        }
+                        return e;
+                      }).apply(this, arguments);
+                  }
+                  function s(e, t) {
+                    if (!(e instanceof t))
+                      throw new TypeError("Cannot call a class as a function");
+                  }
+                  function r(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  i(9);
+                  var o = i(10),
+                    l = (function() {
+                      function e(t) {
+                        var i =
+                          arguments.length > 1 && void 0 !== arguments[1]
+                            ? arguments[1]
+                            : {};
+                        s(this, e),
+                          (this.sliderElement = t),
+                          (this.transitionEndCallback = null),
+                          this.init(i);
+                      }
+                      var t, i, l;
+                      return (
+                        (t = e),
+                        (i = [
+                          {
+                            key: "init",
+                            value: function(e) {
+                              var t = this;
+                              if (
+                                ((this.slides = Array.prototype.slice
+                                  .call(this.sliderElement.children)
+                                  .filter(function(e) {
+                                    return (
+                                      "none" !==
+                                      window.getComputedStyle(e).display
+                                    );
+                                  })),
+                                (this.slidesCount = this.slides.length),
+                                0 === this.slidesCount)
+                              )
+                                throw new DOMException(
+                                  "Slider does not contain any children (slides)"
+                                );
+                              (this.currentSlide = 0),
+                                (this.options = this._getOptions(e)),
+                                (this.numberOfClones =
+                                  this.options.numberOfVisibleSlides + 1),
+                                this._build(),
+                                this._createSlideClones(this.numberOfClones),
+                                this._transitionEnd(),
+                                (this.sliderElement.style.width =
+                                  ((this.slides.length +
+                                    2 * this.numberOfClones) /
+                                    this.options.numberOfVisibleSlides) *
+                                    100 +
+                                  "%"),
+                                this.slide(1),
+                                !0 === this.options.touchFriendly &&
+                                  ((this.swipe = new o(
+                                    this.sliderElement,
+                                    function() {
+                                      return t.prev();
+                                    },
+                                    function() {
+                                      return t.next();
+                                    }
+                                  )),
+                                  this.swipe.init());
+                            }
+                          },
+                          {
+                            key: "slide",
+                            value: function(e) {
+                              var t = this;
+                              return (
+                                (this.currentSlide = e),
+                                this.sliderElement.classList.add(
+                                  "vjslider__slider--animate"
+                                ),
+                                this._moveTo(this.currentSlide),
+                                this.currentSlide > this.slidesCount
+                                  ? ((this.transitionEndCallback = function() {
+                                      t.currentSlide = 1;
+                                    }),
+                                    this.currentSlide)
+                                  : (this.currentSlide <= 0 &&
+                                      (this.transitionEndCallback = function() {
+                                        t.currentSlide = t.slidesCount;
+                                      }),
+                                    this.currentSlide)
+                              );
+                            }
+                          },
+                          {
+                            key: "next",
+                            value: function() {
+                              return this.slide(this.currentSlide + 1);
+                            }
+                          },
+                          {
+                            key: "prev",
+                            value: function() {
+                              return this.slide(this.currentSlide - 1);
+                            }
+                          },
+                          {
+                            key: "destroy",
+                            value: function() {
+                              var e = this.sliderElement.parentNode,
+                                t = e.parentNode;
+                              return (
+                                t.insertBefore(e.firstChild, e),
+                                t.removeChild(e),
+                                this.sliderElement.classList.remove(
+                                  "vjslider__slider"
+                                ),
+                                this.sliderElement.classList.remove(
+                                  "vjslider__slider--animate"
+                                ),
+                                this.sliderElement.removeAttribute("style"),
+                                [].forEach.call(
+                                  this.sliderElement.querySelectorAll(
+                                    ".vjslider__clone"
+                                  ),
+                                  function(e) {
+                                    return e.remove();
+                                  }
+                                ),
+                                this.slides.forEach(function(e) {
+                                  e.classList.remove("vjslider__slide"),
+                                    e.removeAttribute("style");
+                                }),
+                                void 0 !== this.swipe && this.swipe.destroy(),
+                                this
+                              );
+                            }
+                          },
+                          {
+                            key: "reload",
+                            value: function() {
+                              var e =
+                                  arguments.length > 0 &&
+                                  void 0 !== arguments[0]
+                                    ? arguments[0]
+                                    : null,
+                                t = null !== e ? e : this.options;
+                              this.destroy().init(t);
+                            }
+                          },
+                          {
+                            key: "_build",
+                            value: function() {
+                              var e = this.sliderElement.parentNode,
+                                t = document.createElement("div");
+                              (t.className = "vjslider"),
+                                e.replaceChild(t, this.sliderElement),
+                                t.appendChild(this.sliderElement),
+                                this.sliderElement.classList.add(
+                                  "vjslider__slider"
+                                );
+                              var i =
+                                100 /
+                                (2 * this.numberOfClones + this.slidesCount);
+                              this.slides.forEach(function(e) {
+                                e.classList.add("vjslider__slide"),
+                                  (e.style.flexBasis = i + "%");
+                              });
+                            }
+                          },
+                          {
+                            key: "_createSlideClones",
+                            value: function(e) {
+                              for (
+                                var t = this;
+                                this.options.numberOfVisibleSlides >
+                                this.slides.length;
+
+                              )
+                                this._cloneNodes(this.slides),
+                                  (this.slides = this.slides.concat(
+                                    this.slides
+                                  )),
+                                  (this.slidesCount = this.slides.length);
+                              var i = this.slides.slice(0, e),
+                                n = this.slides.slice(-1 * e);
+                              return (
+                                (i = this._fillMissing(i, e, this.slides[0])),
+                                (n = this._fillMissing(
+                                  n,
+                                  e,
+                                  this.slides[this.slides.length - 1]
+                                )),
+                                this._cloneNodes(i),
+                                n.reverse().forEach(function(e) {
+                                  var i = e.cloneNode(!0);
+                                  i.classList.add("vjslider__clone"),
+                                    t.sliderElement.insertBefore(
+                                      i,
+                                      t.sliderElement.firstChild
+                                    );
+                                }),
+                                e
+                              );
+                            }
+                          },
+                          {
+                            key: "_cloneNodes",
+                            value: function(e) {
+                              var t = this;
+                              e.forEach(function(e) {
+                                var i = e.cloneNode(!0);
+                                i.classList.add("vjslider__clone"),
+                                  t.sliderElement.appendChild(i);
+                              });
+                            }
+                          },
+                          {
+                            key: "_fillMissing",
+                            value: function(e, t, i) {
+                              for (; e.length < t; ) e.push(i);
+                              return e;
+                            }
+                          },
+                          {
+                            key: "_transitionEnd",
+                            value: function() {
+                              var e = this;
+                              [
+                                "MSTransitionEnd",
+                                "msTransitionEnd",
+                                "transitionend",
+                                "webkitTransitionEnd"
+                              ].forEach(function(t) {
+                                e.sliderElement.addEventListener(t, function() {
+                                  e._isFunction(e.transitionEndCallback) &&
+                                    ((e.transitionEndCallback = e.transitionEndCallback()),
+                                    e.sliderElement.classList.remove(
+                                      "vjslider__slider--animate"
+                                    ),
+                                    e._moveTo(e.currentSlide));
+                                });
+                              });
+                            }
+                          },
+                          {
+                            key: "_isFunction",
+                            value: function(e) {
+                              return Boolean(
+                                e && e.constructor && e.call && e.apply
+                              );
+                            }
+                          },
+                          {
+                            key: "_moveTo",
+                            value: function(e) {
+                              this.sliderElement.style.transform =
+                                "translate3d(-" +
+                                this._calculatePosition(e) +
+                                "%, 0, 0)";
+                            }
+                          },
+                          {
+                            key: "_calculatePosition",
+                            value: function(e) {
+                              return (
+                                (100 * (e + this.numberOfClones - 1)) /
+                                (this.slidesCount + 2 * this.numberOfClones)
+                              );
+                            }
+                          },
+                          {
+                            key: "_getOptions",
+                            value: function(e) {
+                              return n(
+                                { numberOfVisibleSlides: 1, touchFriendly: !0 },
+                                e
+                              );
+                            }
+                          }
+                        ]) && r(t.prototype, i),
+                        l && r(t, l),
+                        e
+                      );
+                    })();
+                  e.exports = l;
+                },
+                function(e, t, i) {},
+                function(e, t) {
+                  function i(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  var n = (function() {
+                    function e(t, i, n) {
+                      !(function(e, t) {
+                        if (!(e instanceof t))
+                          throw new TypeError(
+                            "Cannot call a class as a function"
+                          );
+                      })(this, e),
+                        (this.element = t),
+                        (this.swipeLeftEvent = i),
+                        (this.swipeRightEvent = n),
+                        (this.x = 0),
+                        (this.pointerDownCallback = this._pointerDown.bind(
+                          this
+                        )),
+                        (this.pointerUpCallback = this._pointerUp.bind(this));
+                    }
+                    var t, n, s;
+                    return (
+                      (t = e),
+                      (n = [
+                        {
+                          key: "init",
+                          value: function() {
+                            this.element.addEventListener(
+                              "touchstart",
+                              this.pointerDownCallback
+                            ),
+                              this.element.addEventListener(
+                                "mousedown",
+                                this.pointerDownCallback
+                              ),
+                              this.element.addEventListener(
+                                "touchend",
+                                this.pointerUpCallback
+                              ),
+                              this.element.addEventListener(
+                                "mouseup",
+                                this.pointerUpCallback
+                              );
+                          }
+                        },
+                        {
+                          key: "destroy",
+                          value: function() {
+                            this.element.removeEventListener(
+                              "touchstart",
+                              this.pointerDownCallback
+                            ),
+                              this.element.removeEventListener(
+                                "mousedown",
+                                this.pointerDownCallback
+                              ),
+                              this.element.removeEventListener(
+                                "touchend",
+                                this.pointerUpCallback
+                              ),
+                              this.element.removeEventListener(
+                                "mouseup",
+                                this.pointerUpCallback
+                              );
+                          }
+                        },
+                        {
+                          key: "_getClientX",
+                          value: function(e) {
+                            return void 0 !== e.changedTouches
+                              ? e.changedTouches[0].clientX
+                              : e.clientX;
+                          }
+                        },
+                        {
+                          key: "_pointerDown",
+                          value: function(e) {
+                            this.x = this._getClientX(e);
+                          }
+                        },
+                        {
+                          key: "_pointerUp",
+                          value: function(e) {
+                            var t = this._getClientX(e) - this.x;
+                            t > 100 && this.swipeLeftEvent(),
+                              t < -100 && this.swipeRightEvent();
+                          }
+                        }
+                      ]) && i(t.prototype, n),
+                      s && i(t, s),
+                      e
+                    );
+                  })();
+                  e.exports = n;
+                },
+                function(e, t) {
+                  function i(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  var n = (function() {
+                    function e(t) {
+                      !(function(e, t) {
+                        if (!(e instanceof t))
+                          throw new TypeError(
+                            "Cannot call a class as a function"
+                          );
+                      })(this, e),
+                        (this.el = t);
+                    }
+                    var t, n, s;
+                    return (
+                      (t = e),
+                      (n = [
+                        {
+                          key: "run",
+                          value: function() {
+                            this._addListener("mouseover", this._addHover),
+                              this._addListener("focus", this._addHover),
+                              this._addListener("mouseout", this._removeHover),
+                              this._addListener("blur", this._removeHover);
+                          }
+                        },
+                        {
+                          key: "_addListener",
+                          value: function(e, t) {
+                            this.el.addEventListener(e, function(e) {
+                              for (
+                                var i = e.target;
+                                i !== document;
+                                i = i.parentNode
+                              )
+                                if (i.classList.contains("lightwidget__link")) {
+                                  t(i);
+                                  break;
+                                }
+                            });
+                          }
+                        },
+                        {
+                          key: "_addHover",
+                          value: function(e) {
+                            e.classList.add("lightwidget__link--hover");
+                          }
+                        },
+                        {
+                          key: "_removeHover",
+                          value: function(e) {
+                            e.classList.remove("lightwidget__link--hover");
+                          }
+                        }
+                      ]) && i(t.prototype, n),
+                      s && i(t, s),
+                      e
+                    );
+                  })();
+                  e.exports = n;
+                },
+                function(e, t, i) {
+                  function n(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  i(13);
+                  var s = (function() {
+                    function e() {
+                      !(function(e, t) {
+                        if (!(e instanceof t))
+                          throw new TypeError(
+                            "Cannot call a class as a function"
+                          );
+                      })(this, e);
+                    }
+                    var t, i, s;
+                    return (
+                      (t = e),
+                      (i = [{ key: "run", value: function() {} }]) &&
+                        n(t.prototype, i),
+                      s && n(t, s),
+                      e
+                    );
+                  })();
+                  e.exports = s;
+                },
+                function(e, t, i) {},
+                function(e, t, i) {
+                  function n(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  i(15);
+                  var s = (function() {
+                    function e(t) {
+                      !(function(e, t) {
+                        if (!(e instanceof t))
+                          throw new TypeError(
+                            "Cannot call a class as a function"
+                          );
+                      })(this, e),
+                        (this.el = t);
+                      var i = new Image();
+                      (this.isObjectFitSupported = "object-fit" in i.style),
+                        (this.interval = null),
+                        (this.wrappers = []);
+                    }
+                    var t, i, s;
+                    return (
+                      (t = e),
+                      (i = [
+                        {
+                          key: "run",
+                          value: function() {
+                            if (!0 === this.isObjectFitSupported) return !1;
+                            this._wrapElements(),
+                              (this.interval = setInterval(
+                                this._setImageSrc.bind(this),
+                                500
+                              )),
+                              this.el.classList.add(
+                                "lightwidget--object-fit-fallback"
+                              );
+                          }
+                        },
+                        {
+                          key: "_wrapElements",
+                          value: function() {
+                            var e = this;
+                            [].forEach.call(
+                              this.el.querySelectorAll(
+                                ".lightwidget__image-wrapper"
+                              ),
+                              function(t) {
+                                var i = document.createElement("div");
+                                i.className = "lightwidget__object-fit-wrapper";
+                                var n = t.querySelector(".lightwidget__image"),
+                                  s = n.cloneNode(!0);
+                                i.appendChild(s),
+                                  t.replaceChild(i, n),
+                                  e.wrappers.push(i);
+                              }
+                            );
+                          }
+                        },
+                        {
+                          key: "_setImageSrc",
+                          value: function() {
+                            this.wrappers.forEach(function(e) {
+                              return (e.style.backgroundImage = "url('".concat(
+                                e.firstChild.getAttribute("src"),
+                                "')"
+                              ));
+                            });
+                          }
+                        }
+                      ]) && n(t.prototype, i),
+                      s && n(t, s),
+                      e
+                    );
+                  })();
+                  e.exports = s;
+                },
+                function(e, t, i) {},
+                function(e, t) {
+                  function i(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  var n = (function() {
+                    function e(t) {
+                      !(function(e, t) {
+                        if (!(e instanceof t))
+                          throw new TypeError(
+                            "Cannot call a class as a function"
+                          );
+                      })(this, e),
+                        (this.el = t),
+                        (this.widgetId = this.el.getAttribute("data-id")),
+                        (this.style = null);
+                    }
+                    var t, n, s;
+                    return (
+                      (t = e),
+                      (n = [
+                        {
+                          key: "run",
+                          value: function(e) {
+                            (this.style = document.createElement("style")),
+                              this.style.appendChild(
+                                document.createTextNode("")
+                              ),
+                              this.el.parentNode.insertBefore(
+                                this.style,
+                                this.el.nextSibling
+                              ),
+                              this.style.sheet.insertRule(
+                                '.lightwidget[data-id="'
+                                  .concat(
+                                    this.widgetId,
+                                    '"] .lightwidget__tile{padding:'
+                                  )
+                                  .concat(e.padding, "px}"),
+                                0
+                              ),
+                              this.style.sheet.insertRule(
+                                '.lightwidget[data-id="'
+                                  .concat(
+                                    this.widgetId,
+                                    '"] .lightwidget__column{padding-right:'
+                                  )
+                                  .concat(e.padding, "px}"),
+                                1
+                              );
+                          }
+                        }
+                      ]) && i(t.prototype, n),
+                      s && i(t, s),
+                      e
+                    );
+                  })();
+                  e.exports = n;
+                },
+                function(e, t) {
+                  function i(e, t) {
+                    for (var i = 0; i < t.length; i++) {
+                      var n = t[i];
+                      (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(e, n.key, n);
+                    }
+                  }
+                  var n = (function() {
+                    function e(t) {
+                      !(function(e, t) {
+                        if (!(e instanceof t))
+                          throw new TypeError(
+                            "Cannot call a class as a function"
+                          );
+                      })(this, e),
+                        (this.el = t),
+                        (this.widgetId = this.el.getAttribute("data-id")),
+                        (this.style = null);
+                    }
+                    var t, n, s;
+                    return (
+                      (t = e),
+                      (n = [
+                        {
+                          key: "run",
+                          value: function(e) {
+                            (this.style = document.createElement("style")),
+                              this.style.appendChild(
+                                document.createTextNode("")
+                              ),
+                              this.el.parentNode.insertBefore(
+                                this.style,
+                                this.el.nextSibling
+                              ),
+                              this.style.sheet.insertRule(
+                                '.lightwidget[data-id="'
+                                  .concat(
+                                    this.widgetId,
+                                    '"] .lightwidget__caption{font-size:'
+                                  )
+                                  .concat(e.captions.fontSize, "rem}"),
+                                0
+                              ),
+                              this.style.sheet.insertRule(
+                                '.lightwidget[data-id="'
+                                  .concat(
+                                    this.widgetId,
+                                    '"] .lightwidget__reactions{font-size:'
+                                  )
+                                  .concat(e.captions.fontSize, "rem}"),
+                                1
+                              );
+                          }
+                        }
+                      ]) && i(t.prototype, n),
+                      s && i(t, s),
+                      e
+                    );
+                  })();
+                  e.exports = n;
+                }
+              ]);
+            </script>
+          </body>
+        </html>
+        <p>ㅤ</p>
+        <p>ㅤ</p>
+      </div>
+      <div class="footer"></div>
+    </div>
+    <script>
+      function $(id) {
+        return document.getElementById(id);
+      }
+
+      $("unblocker-form").onsubmit = function() {
+        var url = $("url").value;
+        if (url.substr(0, 4) != "http") {
+          url = "http://" + url;
+        }
+        window.location.pathname = "/R/" + url;
+        return false;
+      };
+
+      function checkError() {
+        var search = window.location.search;
+        var start = search.indexOf("error=");
+        if (start > -1) {
+          var stop = search.indexOf("&", start);
+          if (stop == -1) {
+            stop = undefined;
+          }
+          // +6 for "error="
+          var err = search.substr(start + 6, stop);
+          var $error = $("error");
+          $error.innerText = $error.textContent = decodeURIComponent(err);
+          $error.style.display = "block";
+        }
+      }
+
+      window.onload = function() {
+        $("url").focus();
+        checkError();
+      };
+    </script>
+    <a href="http://example.com/" target="_blank"
+      ><img
+        src="https://cdn.glitch.com/d4c3e499-709e-4379-b18d-87fa86c658f4%2F8bfe0187d4c23c5c4bad09a11d68c9a89298c2d9_hq.gif?v=1580934885244"
+        height="50"
+        width="50"
+        style="position:absolute; float:right; right:0px; bottom:0px; z-index:2;"
+      />
+    </a>
+  </body>
+</html>
